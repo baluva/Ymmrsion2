@@ -1,5 +1,5 @@
 
-Titre de Votre Projet
+
 Ce projet est une application web développée en Go. Suivez les instructions ci-dessous pour démarrer l'application sur votre ordinateur local.
 
 Prérequis
