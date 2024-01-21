@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styleprofil.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil de l'Aventurier</title>
+</head>
+
+<body>
+    <h1>Liste des aventuriers</h1>
+    {{if .}}
+    <ul>
+        {{range .}}
+        <li>
+            ID: {{.ID}} - {{.Nom}} - {{.Classe}} - Niveau {{.Niveau}} - Points de vie: {{.PointVie}}
+            <a href="/modify?id={{.ID}}">Modifier</a>
+            <a href="/delete?id={{.ID}}">Supprimer</a>
+        </li>
+        {{end}}
+    </ul>
+    {{else}}
+    <p>Aucun aventurier trouvé.</p>
+    {{end}}
+    <a href="/">Retour à la page d'accueil</a>
+</body>
+
+</html>

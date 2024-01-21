@@ -1,0 +1,79 @@
+body {
+    background-image: url("/static/img/backgroundimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Bungee Spice', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-family: 'Bungee Spice', Arial, sans-serif;
+    color: #ffffff;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  li a {
+    font-family: 'Bungee Spice', Arial, sans-serif;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 8px 16px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  li a:hover {
+    background-color: #2980b9;
+  }
+  
+  a[href="/"]:hover {
+    background-color: #27ae60;
+  }
+  
+  a[href^="/modify"], a[href^="/delete"] {
+    background-color: #e74c3c;
+  }
+  
+  a[href^="/modify"]:hover, a[href^="/delete"]:hover {
+    background-color: #c0392b;
+  }
+  
+  a[href="/"] {
+    background-color: #2ecc71;
+    font-size: 1.1em;
+    padding: 10px 20px;
+  }
+  
+  @media (max-width: 768px) {
+    li {
+      width: 95%;
+    }
+  }
+  

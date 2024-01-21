@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création d'Aventurier</title>
+    <link rel="stylesheet" href="/static/stylecrea.css">
+</head>
+<style>
+    h1 {
+        font-family: 'Bungee Spice', cursive;
+    }
+</style>
+<body>
+    <h1>Création d'un nouvel aventurier</h1>
+    <div class="container">
+        <form action="/create" method="post">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" required><br>
+
+            <label for="classe">Classe</label>
+            <select name="classe" required>
+                <option value="magicien">Magicien</option>
+                <option value="elfe">Elfe</option>
+                <option value="humain">Humain</option>
+            </select><br>
+
+            <label for="niveau">Niveau</label>
+            <input type="number" name="niveau" required><br>
+
+            <label for="pointVie">Points de vie</label>
+            <input type="number" name="pointVie" required><br>
+
+            <input type="submit" value="Créer">
+        </form>
+        <br>
+        <a href="/" class="home-button">Retour à la page d'accueil</a>
+    </div>
+</body>
+
+</html>

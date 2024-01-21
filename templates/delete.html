@@ -1,0 +1,24 @@
+{{define "delete.html"}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer l'Aventurier</title>
+</head>
+
+<body>
+    <h1>Supprimer l'Aventurier</h1>
+    
+    <form action="/delete" method="post">
+        <input type="hidden" name="id" value="{{.ID}}">
+        <p>Êtes-vous sûr de vouloir supprimer l'aventurier ?</p>
+        <input type="submit" value="Confirmer la suppression">
+    </form>
+   
+    <a href="/profil">Annuler et retourner à la liste des aventuriers</a>
+</body>
+
+</html>
+{{end}}
